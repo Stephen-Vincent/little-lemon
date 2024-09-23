@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    padding:0 10px 0 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
