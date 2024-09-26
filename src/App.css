@@ -1,5 +1,19 @@
+
+/* Global Color Variables */
+:root {
+  --primary-green: #495E57;
+  --primary-yellow: #F4CE14;
+  --secondary-orange: #EE9972;
+  --secondary-peach: #FBDABB;
+  --white: #ffffff;
+  --dark: #333333;
+
+  /* Global Font Variables */
+  --secondary-font: 'Markazi Text', serif;
+  --primary-font: 'Karla', sans-serif;
+}
+
 .container {
-  max-width: 768px;
+  max-width: 900px;
   margin: auto;
-  border: 1px solid black;
 }

@@ -1,0 +1,22 @@
+.specials-section {
+    height: auto;
+}
+
+.specials-heading {
+    color: var(--dark);
+    font-size: 40px;
+}
+
+.btn-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 40px 10px 40px ;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}

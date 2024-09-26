@@ -2,16 +2,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 35px;
 }
 
-ul {
+.nav-links {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-a {
+.nav-links a {
     text-decoration: none;
     color: #333333;
     padding:0 10px 0 10px;
@@ -20,4 +21,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    margin: 0;
 }

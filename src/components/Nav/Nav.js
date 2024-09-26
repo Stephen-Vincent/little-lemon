@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav>
       <img src={Logo} alt="Little Lemon Logo" />
-      <ul>
+      <ul className="nav-links">
         <li>
           <a href="/">Home</a>
         </li>

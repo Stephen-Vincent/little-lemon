@@ -1,0 +1,27 @@
+.btn-primary {
+    background-color: var(--primary-yellow);
+    color: var(--dark);
+    font-family: var(--text-font);
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .btn-secondary {
+    background-color: var(--primary-green);
+    color: var(--white);
+    font-family: var(--text-font);
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 180px;
+    height: 50px;
+  }

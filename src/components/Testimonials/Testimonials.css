@@ -1,0 +1,24 @@
+.testimonials-section {
+    background-color: var(--primary-green);
+    color: var(--white);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.testimonials-section h2 {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+}
+
+.testimonial-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 10px;
+}
