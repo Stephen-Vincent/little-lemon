@@ -20,3 +20,14 @@
     justify-content: space-evenly;
     margin: 20px;
 }
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .specials-heading {
+        color: var(--dark);
+        font-size: 30px;
+    }
+}

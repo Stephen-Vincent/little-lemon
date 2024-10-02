@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           <Button type="primary" label="Reserve a Table" />
         </article>
-        <div>
+        <div className="heroimg-section ">
           <img
             className="heroimg"
             src={HeroImg}

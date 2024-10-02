@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import Logo from "../../assets/Logo.png";
 
 const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav>
-      <img src={Logo} alt="Little Lemon Logo" />
-      <ul className="nav-links">
+    <nav className="navbar">
+      <img src={Logo} alt="Little Lemon Logo" className="logo" />
+      <button className="hamburger" onClick={toggleMenu}>
+        &#9776; {/* Hamburger Icon */}
+      </button>
+      <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <li>
           <a href="/">Home</a>
         </li>

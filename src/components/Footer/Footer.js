@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import FooterLogo from "../../assets/FooterLogo.png";
+import Facebook from "../../assets/Facebook.png";
+import TwitterX from "../../assets/TwitterX.png";
+import Instagram from "../../assets/Instagram.png";
 
 const Footer = () => {
   return (
@@ -51,7 +54,32 @@ const Footer = () => {
       </div>
 
       {/* Socials */}
-      <div></div>
+      <div>
+        <p className="footer-address-title">Socials</p>
+        <div>
+          <a href="www.instagram.com" target="_blank">
+            <img
+              className="footer-socials"
+              src={Instagram}
+              alt="Instagram Logo"
+            />
+          </a>
+          <a href="www.facebook.com" target="_blank">
+            <img
+              className="footer-socials"
+              src={Facebook}
+              alt="Facebook Logo"
+            />
+          </a>
+          <a href="www.x.com" target="_blank">
+            <img
+              className="footer-socials"
+              src={TwitterX}
+              alt="TwitterX Logo"
+            />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

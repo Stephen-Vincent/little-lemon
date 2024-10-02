@@ -1,6 +1,6 @@
 .card {
-    width: 260px;
-    height: 460px;
+    width: 100%;
+    height: auto;
     border-radius: 16px;
     background-color: #d3d3d350;
     display: flex;
@@ -38,8 +38,32 @@
 
 .card-description {
     color: var(--dark);
-    margin-bottom: 16px; 
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Show only 3 lines initially */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 4.5em; /* Adjust height based on line height and number of lines */
+  }
+  
+  .card-description.expanded {
+    -webkit-line-clamp: unset; /* Remove line clamp when expanded */
+    max-height: none;
+  }
+  
+  .read-more-btn {
+    color: #000;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px 0 ;
+  }
+  
 
 .delivery-section {
     display: flex;
@@ -53,9 +77,38 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--dark);
 }
 
 .delivery-section img {
     width: 20px; 
     height: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: auto;
+    
+    }
+
+  
+
+    /* .card-title {
+        font-size: 18px;
+    } */
+
+    /* .card-description, .card-price {
+      font-size: 14px; 
+
+    } */
+
+  
+
+
+    /* .delivery-section a {
+        font-size: 13px;
+        flex: 1;
+    } */
+
+     
 }
