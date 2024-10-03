@@ -7,15 +7,17 @@
     padding: 10px;
     margin-top: 50px;
 }
+
 .footer-logo {
     width: 100px;
     height: 100%;
 }
+
 .footer-address, .footer-links {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 175px;
 }
 
 .footer-links-title, .footer-address-title {
@@ -23,20 +25,16 @@
     color: var(--dark);
 }
 
-.footer-links-list  {
+.footer-links-list {
     list-style: none;
     padding-left: 0; /* Removes default padding */
     margin-left: 0; /* Removes default margin */
 }
 
-
-
 .footer-links-list a {
     text-decoration: none;
     color: var(--dark);
-  
 }
-
 
 .footer-address p {
     color: var(--dark);
@@ -48,3 +46,70 @@
     height: 40px;
 }
 
+
+
+/* Tablet screens (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-section {
+        font-size: 12px; /* Reduce the font size */
+        height: auto; /* Adjust height to auto for flexibility */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .footer-logo {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .footer-socials {
+        width: 30px;
+        height: 30px; /* Reduce social icon size */
+    }
+
+    .footer-links, .footer-address {
+        justify-content: space-evenly;
+    }
+}
+
+/* Mobile screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .footer-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        font-size: 10px; /* Further reduce font size */
+        height: auto; /* Allow height to adjust */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .footer-logo {
+        width: 60px; /* Smaller logo size */
+    }
+
+    .footer-socials {
+        width: 25px;
+        height: 25px; /* Further reduce social icon size */
+    }
+
+    .footer-links-list {
+        padding-left: 0; /* Ensure no padding on mobile */
+        margin-left: 0; /* Ensure no margin on mobile */
+        text-align: center; /* Center the links */
+    }
+
+    .footer-links, .footer-address {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* Add spacing between sections */
+    }
+
+    .footer-address p {
+        margin-bottom: 5px; /* Add spacing between address lines */
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

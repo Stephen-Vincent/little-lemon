@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
 
       {/* Socials */}
-      <div>
+      <div className="social-container">
         <p className="footer-address-title">Socials</p>
         <div>
           <a href="www.instagram.com" target="_blank">

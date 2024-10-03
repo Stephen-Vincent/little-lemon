@@ -6,7 +6,7 @@ import RestaurantChef from "../../assets/restaurant-chef-B.png";
 const About = () => {
   return (
     <section className="about-section">
-      <article>
+      <article className="about-content">
         <div>
           <h1 className="about-heading">Little Lemon</h1>
           <h2 className="sub-heading">Chicago</h2>

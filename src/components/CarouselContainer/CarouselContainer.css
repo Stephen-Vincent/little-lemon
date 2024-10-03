@@ -1,0 +1,52 @@
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    scroll-snap-type: x mandatory; /* Snap to the nearest card when scrolling */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on mobile devices */
+    gap: 0px; /* No space between cards on small screens */
+    padding: 10px; /* Optional padding */
+    width: 100%; /* Ensure container takes up full width */
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+  }
+  
+  .testimonials-card {
+    flex: 0 0 80%; /* Each card takes up 80% of the container's width on small screens */
+    max-width: 200px; /* Limit the card's maximum width */
+    scroll-snap-align: start; /* Snap each card to the start of the container when scrolling */
+  }
+  
+  /* For larger screens (e.g., desktop) */
+  @media (min-width: 768px) {
+    .carousel-container {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 cards, slightly smaller than 1fr */
+      gap: 20px; /* Add space between the cards */
+      overflow: hidden; /* Disable horizontal scrolling */
+    }
+    
+    .testimonials-card {
+      max-width: none; /* Remove max-width restriction */
+      width: 90%; /* Reduce the card size to allow more space between cards */
+      margin: 0 auto; /* Center the cards within the grid columns */
+    }
+  }
+  
+  /* For smaller screens (e.g., mobile) */
+  @media (max-width: 767px) {
+    .carousel-container {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+  
+    .testimonials-card {
+      flex: 0 0 80%; /* Each card takes up 80% of the width */
+      max-width: 300px; /* Set a max width */
+      margin: 0 10px; /* Add spacing */
+    }
+  }
+  
