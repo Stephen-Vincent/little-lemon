@@ -17,7 +17,7 @@ const Hero = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Button type="primary" label="Reserve a Table" />
+          <Button type="primary" label="Reserve a Table" to="/booking" />
         </article>
         <div className="heroimg-section ">
           <img
